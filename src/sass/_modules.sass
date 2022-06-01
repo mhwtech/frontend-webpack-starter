@@ -1,0 +1,31 @@
+/*----------------------------------------
+ * card
+ */
+.card-list
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  gap: 20px
+  > *
+    width: calc(25% - 15px)
+    min-width: 160px
+
+.card
+  border: 1px solid #ccc
+  border-radius: 5px
+  & > *
+    padding: 10px
+
+  &__header
+    font-weight: 600
+    background-color: #eee
+    
+  &__body
+    font-size: 0.875rem
+
+  &--dark
+    @extend .card
+    .card
+      &__header
+        background-color: #666
+        color: #fff
